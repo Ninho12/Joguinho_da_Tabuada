@@ -75,6 +75,23 @@ table td:hover{
     transition: 0.5s;
 }
 
+/*  
+    Divs que são responsaveis pela 
+    logica do jogo e seus possiveis
+    estados.
+*/
 #escolha{
     visibility: visible;
+}
+
+#jogo{
+    border: 1px solid #000;
+    width: 300px;
+    margin: 10px auto;
+}
+
+#mensagem{
+    border: 1px solid #000;
+    width: 300px;
+    margin: 10px auto;
 }
