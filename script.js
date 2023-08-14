@@ -9,6 +9,7 @@
 
 // Iniciando constantes importantes no jogo.
 
+const CONTAINER = document.getElementById("container")
 const ESCOLHA = document.getElementById("escolha")
 const JOGO = document.getElementById("jogo")
 const MENSAGEM = document.getElementById("mensagem")
@@ -54,5 +55,20 @@ function escolher(n, op){
     botao.style.visibility = "visible"
     // Modificando o Texto
     h1.textContent = "Estude para o Jogo"
+
+}
+
+// Função para começar o jogo
+function comecar(){
+
+    CONTAINER.removeChild(ESCOLHA)
+    JOGO.style.visibility = "visible"
+
+}
+
+// Função para o a realização do jogo
+function play(){
+
     
+
 }
