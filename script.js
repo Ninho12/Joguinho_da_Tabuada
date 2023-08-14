@@ -19,6 +19,7 @@ function escolher(n, op){
 
     var conteudo = ""
     // Assim que pega um filho de um elemento pai (#escolha)
+    var h1 = ESCOLHA.querySelector("h1")
     var tabela = ESCOLHA.querySelector("table") 
     var botao = ESCOLHA.querySelector("button")
 
@@ -51,4 +52,7 @@ function escolher(n, op){
     tabela.innerHTML = conteudo;
     // Tornando o botao visivel
     botao.style.visibility = "visible"
+    // Modificando o Texto
+    h1.textContent = "Estude para o Jogo"
+    
 }
