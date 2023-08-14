@@ -8,11 +8,17 @@
 
 
 // Iniciando constantes importantes no jogo.
-
+// Constantes que são elementos html
 const CONTAINER = document.getElementById("container")
 const ESCOLHA = document.getElementById("escolha")
 const JOGO = document.getElementById("jogo")
 const MENSAGEM = document.getElementById("mensagem")
+
+// Iniciando variaveis importantes
+var array_da_tabuada = [];
+
+// O contador da questão
+var contador = 0
 
 
 // Criando função do jogo.
@@ -30,21 +36,43 @@ function escolher(n, op){
             conteudo += "<tr>"
             conteudo += "<td>"+ n+" + "+i+" = "+(n+i)+"</td>"
             conteudo += "</tr>"  
+
+            
+            // Guardando o valores em um array de objetos
+            // que representa a tabuada.
+            var tabuada = new Tabuada(n, i, "+", n + i);
+            array_da_tabuada[i - 1] = tabuada
         }
         else if(op == "-"){
             conteudo += "<tr>"
             conteudo += "<td>"+ n+" - "+i+" = "+(n-i) +"</td>"
             conteudo += "</tr>"
+
+            // Guardando o valores em um array de objetos
+            // que representa a tabuada.
+            var tabuada = new Tabuada(n, i, "-", n - i);
+            array_da_tabuada[i - 1] = tabuada
+           
         }
         else if(op == "x"){
             conteudo += "<tr>"
             conteudo += "<td>" + n+" x "+i+" = "+(n*i) + "</td>"
             conteudo += "</tr>"  
+
+            // Guardando o valores em um array de objetos
+            // que representa a tabuada.
+            var tabuada = new Tabuada(n, i, "*", n * i);
+            array_da_tabuada[i - 1] = tabuada
         }
         else if(op == "/"){
             conteudo += "<tr>"
             conteudo += "<td>" + n+" / "+i+" = "+(n/i) +"</td>"
             conteudo += "</tr>"
+
+            // Guardando o valores em um array de objetos
+            // que representa a tabuada.
+            var tabuada = new Tabuada(n, i, "/", n / i);
+            array_da_tabuada[i - 1] = tabuada
         }
         
     }
@@ -67,8 +95,22 @@ function comecar(){
 }
 
 // Função para o a realização do jogo
-function play(){
+function proximo(){
 
-    
+   
 
 }
+
+
+
+
+// Função de Construção do objeto tabuada
+function Tabuada(primeiroNumero, segundoNumero, operacao, resultado) {
+   
+    this.primeiroNumero = primeiroNumero;
+    this.segundoNumero = segundoNumero;
+    this.operacao = operacao;
+    this.resultado = resultado;
+
+}
+
