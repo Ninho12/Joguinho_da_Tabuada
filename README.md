@@ -1,14 +1,22 @@
-# Modelo Educativo de Games
+# Joguinho da Tabuada
 
-Com esse modelo eu terei a base para criar jogos educativos para ajudar na educação.
+Com esse simples joguinho da tabuada
+quero poder ajudar muitos alunos do
+ensino fundamental a treinar a tabuada
+e serem bons na tabuada.
 
-## Inspirado na Professora Jaciele
+## Para ajudar Jaciele e outras professoras
 
-Eu gosto de Jaciele e ela é professora então eu quero ajudar ela no seu trabalho de educar e também
-ajudar muitos alunos não só os dela mas do Brasil inteiro.
+Minha inspiração para criação desse joguinho foi a professora Jacy. Ela é pedagoga e ensina crianças e adultos os conhecimentos basicos de portugues e matematica.
 
-Então eu vou criar muitos jogos educativos e vou compartilhar com a Professora Jacy e com o Brasil atraves do
-meu canal no Youtube.
+## A educação transforma
+
+A educação transforma e renova o mundo.
+Deus abençoe todas as professoras e todos os programadores.
+
+Viva a Deus!!!
+Viva a Educação!!!
+Viva a Tecnologia!!!
 
 
 Salve Maria Santissima!!!
