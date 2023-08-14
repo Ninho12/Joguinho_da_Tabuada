@@ -18,32 +18,37 @@ const MENSAGEM = document.getElementById("mensagem")
 function escolher(n, op){
 
     var conteudo = ""
+    // Assim que pega um filho de um elemento pai (#escolha)
+    var tabela = ESCOLHA.querySelector("table") 
+    var botao = ESCOLHA.querySelector("button")
 
     for(var i = 1; i <= 10; i++){
 
         if(op == "+"){
             conteudo += "<tr>"
-            conteudo += "<td>"+ n+" + "+i+" = "+(n+1)+"</td>"
+            conteudo += "<td>"+ n+" + "+i+" = "+(n+i)+"</td>"
             conteudo += "</tr>"  
         }
         else if(op == "-"){
             conteudo += "<tr>"
-            conteudo += "<td>"+ n+" - "+i+" = "+(n-1) +"</td>"
+            conteudo += "<td>"+ n+" - "+i+" = "+(n-i) +"</td>"
             conteudo += "</tr>"
         }
         else if(op == "x"){
             conteudo += "<tr>"
-            conteudo += "<td>" + n+" x "+i+" = "+(n*1) + "</td>"
+            conteudo += "<td>" + n+" x "+i+" = "+(n*i) + "</td>"
             conteudo += "</tr>"  
         }
         else if(op == "/"){
             conteudo += "<tr>"
-            conteudo += "<td>" + n+" / "+i+" = "+(n/1) +"</td>"
+            conteudo += "<td>" + n+" / "+i+" = "+(n/i) +"</td>"
             conteudo += "</tr>"
         }
-
-
         
     }
 
+    // Adicionando a tabela.
+    tabela.innerHTML = conteudo;
+    // Tornando o botao visivel
+    botao.style.visibility = "visible"
 }
