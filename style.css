@@ -127,7 +127,7 @@ table td:hover{
     visibility: collapse;
 }
 
-button{
+button, .botao{
     padding: 10px;
     font-size: 15px;
     background-color: green;
