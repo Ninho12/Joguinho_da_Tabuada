@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Subtração</title>
+</head>
+<body>
+    
+    <div id="container">
+
+        <!-- Nesta div eu vou dar a opção
+        para o aluno escolher qual o numero
+        ele quer estudar. -->
+        <div id="escolha">
+
+            <h1>Escolha algum numero</h1>
+
+            <p>Depois de escolher um numero você precisará
+                estudar e só depois você vai começar
+                o jogo.
+            </p>
+
+            <table name="tabela">
+                <tr>
+                    <td onclick="escolher(2, '-')">02</td>
+                    <td onclick="escolher(3, '-')">03</td>
+                    <td onclick="escolher(4, '-')">04</td>
+                </tr>
+                <tr>
+                    <td onclick="escolher(5, '-')">05</td>
+                    <td onclick="escolher(6, '-')">06</td>
+                    <td onclick="escolher(7, '-')">07</td>
+                </tr>
+                <tr>
+                    <td onclick="escolher(8, '-')">08</td>
+                    <td onclick="escolher(9, '-')">09</td>
+                    <td onclick="escolher(10, '-')">10</td>
+                </tr>
+                
+            </table>
+            <button onclick="comecar()">Começar o Jogo</button>
+
+
+
+        </div>
+
+        <!-- Esta Div é responsavel pelo jogo. -->
+        <div id="jogo">
+
+            <div id="placar">
+                <span id="pontuacao">Pontuação: 500</span>
+                
+                <!--
+                <span id="temporizador">Temporizador: 5:45</span>
+                -->
+
+            </div>
+
+            <h2 id="questoes">
+                5 x 5 = ?
+            </h2>
+
+            <input type="number" id="resposta" />
+
+            <button onclick="proximo()">
+                Responder
+            </button>
+        </div>
+
+        <!-- Esta Div é responsavel pela mensagem do jogo -->
+        <div id="mensagem">
+            
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

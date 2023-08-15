@@ -190,6 +190,26 @@ function game_over(){
     MENSAGEM.innerHTML = texto
 }
 
+function ganhou(){
+
+    var texto = ""
+
+    CONTAINER.removeChild(JOGO)
+    MENSAGEM.style.visibility = 'visible'
+
+    // Mensagem
+    texto += "<h2>Você Ganhou!</h2>"
+    texto += "<p>Parabens! Você pode treinar novamente ou ir para o menu</p>"
+
+
+    // Botões
+    texto += "<a class='botao' href='#' onclick='location.reload()'>Tentar Novamente</a>"
+    texto += "<a class='botao' href='index.html'>Ir Para o Menu</a>"
+
+    // Inserindo o conteudo
+    MENSAGEM.innerHTML = texto
+
+}
 
 // Função de Construção do objeto tabuada
 function Tabuada(primeiroNumero, segundoNumero, operacao, resultado) {
