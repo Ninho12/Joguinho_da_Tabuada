@@ -111,6 +111,7 @@ function comecar(){
     pontuacao.innerHTML = "<b>Pontuacao: 0</b>"
     questoes.innerHTML = n1+" "+ op +" "+n2+" = ?"
 
+
 }
 
 // Função para o a realização do jogo
@@ -145,13 +146,12 @@ function acertou(n){
 // Função para atualizar as questoes
 function atualizar(){
 
+    // Quando o jogo estiver rodando
+    var res = array_da_tabuada[contador].resultado
+    score += res
+    contador = contador + 1
 
     if(contador < 10){
-        // Quando o jogo estiver rodando
-        var res = array_da_tabuada[contador].resultado
-        score += res
-        contador = contador + 1
-
         // pegando os valores
         var n1 = array_da_tabuada[contador].primeiroNumero
         var n2 = array_da_tabuada[contador].segundoNumero
@@ -165,7 +165,7 @@ function atualizar(){
         
     }else{
         // Quando o jogo chegou ao fim
-
+        ganhou()
 
     }
 
